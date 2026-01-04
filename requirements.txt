@@ -1,0 +1,36 @@
+# 텔레그램 봇
+python-telegram-bot==20.7
+
+# 환경 변수 관리
+python-dotenv==1.0.0
+
+# YouTube API
+google-api-python-client==2.108.0
+google-auth-oauthlib==1.2.0
+google-auth-httplib2==0.2.0
+
+# 스케줄러
+apscheduler==3.10.4
+
+# 타임존 자동 감지
+tzlocal==5.2
+
+# 영상 편집
+moviepy==1.0.3
+
+# 이미지 처리
+Pillow==10.1.0
+
+# Gemini AI
+google-generativeai==0.3.2
+
+# HTTP 요청 (VOICEVOX TTS)
+requests==2.31.0
+
+# 영상 분석 (선택적)
+# openai-whisper==20231117
+
+# FFmpeg (영상 처리 - 시스템 설치 필요)
+# macOS: brew install ffmpeg
+# Ubuntu/Debian: sudo apt-get install ffmpeg
+# Windows: https://ffmpeg.org/download.html

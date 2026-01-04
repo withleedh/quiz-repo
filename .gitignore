@@ -1,0 +1,29 @@
+# 환경 변수
+.env
+
+# OAuth 인증 (보안)
+client_secrets.json
+youtube_token.pickle
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+
+# 출력 파일 (용량이 큼)
+output/
+backup/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# 임시 파일
+*.tmp
+*TEMP_MPY*

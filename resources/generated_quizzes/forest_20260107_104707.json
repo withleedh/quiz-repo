@@ -1,0 +1,22 @@
+{
+  "quiz_metadata": {
+    "theme": "Forest",
+    "target_answer_n": 5,
+    "total_prompted_count": 6,
+    "quiz_type": "dementia"
+  },
+  "image_generation": {
+    "prompt": "An intricate optical illusion of a Forest. Using pareidolia, hide EXACTLY 6 human faces naturally within the scene. Each face must be distinct and identifiable. Style: monochromatic vintage aesthetic, 4k, detailed."
+  },
+  "ui_elements": {
+    "top_title": "認知症が始まった人は\n違って見える絵",
+    "narration_script": "認知症が始まった人には違って見えます。見えた顔の数を選んでください。",
+    "selection_buttons": [
+      "1個以下",
+      "2個",
+      "3〜4個",
+      "4〜6個"
+    ]
+  },
+  "detailed_analysis_comment": "【4〜6個を選んだ方：正常】\n集中して観察することで、隠された顔を5個（目標回答数）あるいはその範囲内の4〜6個見つけられた方は、正常な認知機能を示しています。これは、細かな視覚情報を統合し認識する能力が適切に機能していることを意味します。\n\n【3〜4個を選んだ方：注意力の低下の可能性】\n多くの顔を認識できているものの、目標数に達していません。集中力の問題や、認知機能の軽度な低下が原因で、細部を見落としている可能性があります。\n\n【2個を選んだ方：視覚認知機能の低下の可能性】\n隠された顔を2個のみしか認識できなかった方は、視覚的な情報を処理する能力に困難が生じ始めている可能性があります。これは、認知機能の低下の初期サインであるかもしれません。\n\n【1個以下を選んだ方：認知機能の著しい低下の可能性】\nほとんど、または全く顔を見つけられなかった場合、画像を構成する要素から顔を認識する能力（パレイドリア）が著しく低下していることを示唆しています。これは、認知症による視覚認知機能の重度な低下の可能性があります。"
+}

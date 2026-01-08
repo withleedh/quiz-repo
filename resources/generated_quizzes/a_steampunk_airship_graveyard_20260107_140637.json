@@ -1,0 +1,22 @@
+{
+  "quiz_metadata": {
+    "theme": "A Steampunk Airship Graveyard",
+    "target_answer_n": 7,
+    "total_prompted_count": 8,
+    "quiz_type": "dementia"
+  },
+  "image_generation": {
+    "prompt": "An intricate optical illusion of A Steampunk Airship Graveyard. Using pareidolia, hide EXACTLY 8 human faces naturally within the scene. Each face must be distinct and identifiable. Style: monochromatic vintage aesthetic, 4k, detailed."
+  },
+  "ui_elements": {
+    "top_title": "認知症が始まった人は\n違って見える絵",
+    "narration_script": "認知症が始まった人には違って見えます。見えた顔の数を選んでください。",
+    "selection_buttons": [
+      "1個以下",
+      "2~3個",
+      "4~5個",
+      "6~8個"
+    ]
+  },
+  "detailed_analysis_comment": "このクイズの絵には、細部にわたって8個の顔が隠されています。正解（認知症予防の観点からの正常範囲）は7個を中心とした「6～8個」の範囲です。\n\n**【6~8個】**：\n正解の選択肢です。隠された顔をほとんど、あるいは全て見つけられており、認知機能が健康である可能性が高いです。特に細部への注意力が優れています。\n\n**【4~5個】**：\n隠された顔の一部を見逃しています。軽度の認知機能の低下の兆候である可能性がありますが、まだ正常範囲に近い状態です。全体像に気を取られすぎているかもしれません。\n\n**【2~3個】**：\n多くの顔を見つけられていません。認知機能の低下が進んでいる可能性があります。細かい部分の認識力や集中力の衰えを示唆しているかもしれません。\n\n**【1個以下】**：\n大半の顔を見逃しています。これは認知症の初期段階、またはそれ以上の兆候である可能性があります。専門家への相談を推奨します。"
+}

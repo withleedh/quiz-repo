@@ -22,9 +22,9 @@ import tempfile
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 import numpy as np
-from moviepy import (
+from moviepy.editor import (
     ImageClip, AudioFileClip, CompositeAudioClip, 
-    concatenate_audioclips, CompositeVideoClip
+    concatenate_audioclips, CompositeVideoClip, VideoClip
 )
 
 # 같은 폴더의 api.py import
@@ -382,9 +382,10 @@ class QuizVideoGenerator:
         print(f"🎬 퀴즈 영상 생성 시작...")
         
         # 비디오 클립 생성
-        clip = ImageClip(self.make_frame(0), duration=duration)
-        clip = clip.with_fps(FPS)
-        clip = clip.transform(lambda get_frame, t: self.make_frame(t))
+        self.duration = duration
+        # MoviePy 1.x 호환성을 위해 VideoClip 사용 및 set_ 메서드 사용
+        clip = VideoClip(self.make_frame, duration=duration)
+        clip = clip.set_fps(FPS)
         
         # 오디오 트랙 생성
         audio_clips = []
@@ -396,7 +397,7 @@ class QuizVideoGenerator:
         
         if os.path.exists(actual_intro):
             print(f"  🔊 시작 효과음 추가: {actual_intro}")
-            intro_audio = AudioFileClip(actual_intro).with_start(0)
+            intro_audio = AudioFileClip(actual_intro).set_start(0)
             audio_clips.append(intro_audio)
         else:
             print(f"  ⚠️ 시작 효과음 없음: {actual_intro}")
@@ -408,7 +409,7 @@ class QuizVideoGenerator:
         
         if os.path.exists(actual_popup):
             print(f"  🔊 팝업 효과음 추가: {actual_popup}")
-            popup_audio = AudioFileClip(actual_popup).with_start(self.badge_fade_start)
+            popup_audio = AudioFileClip(actual_popup).set_start(self.badge_fade_start)
             audio_clips.append(popup_audio)
         else:
             print(f"  ⚠️ 팝업 효과음 없음: {actual_popup}")
@@ -417,17 +418,17 @@ class QuizVideoGenerator:
         if narration_audio and os.path.exists(narration_audio):
             print(f"  🎤 나레이션 추가: {narration_audio}")
             
-            narration = AudioFileClip(narration_audio).with_start(0.3)
+            narration = AudioFileClip(narration_audio).set_start(0.3)
             audio_clips.append(narration)
             
             # 나레이션 길이에 맞게 영상 길이 조정
             total_duration = max(duration, narration.duration + 1.0)
-            clip = clip.with_duration(total_duration)
+            clip = clip.set_duration(total_duration)
         
         # 오디오 합성
         if audio_clips:
             final_audio = CompositeAudioClip(audio_clips)
-            clip = clip.with_audio(final_audio)
+            clip = clip.set_audio(final_audio)
         
         # 영상 출력
         clip.write_videofile(

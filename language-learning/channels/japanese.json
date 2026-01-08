@@ -1,0 +1,61 @@
+{
+  "channelId": "japanese_for_korean",
+  
+  "meta": {
+    "name": "귀가 뚫리는 일본어",
+    "targetLanguage": "Japanese",
+    "nativeLanguage": "Korean",
+    "youtubeChannelId": ""
+  },
+  
+  "theme": {
+    "logo": "assets/japanese/logo.png",
+    "introSound": "assets/japanese/intro.mp3",
+    "backgroundStyle": "illustration",
+    "primaryColor": "#FF6B6B",
+    "secondaryColor": "#4ECDC4"
+  },
+  
+  "colors": {
+    "maleText": "#4A90D9",
+    "femaleText": "#E91E63",
+    "nativeText": "#FFFFFF",
+    "wordMeaning": "#888888",
+    "background": "#000000"
+  },
+  
+  "layout": {
+    "step3ImageRatio": 0.4,
+    "subtitlePosition": "center",
+    "speakerIndicator": "left"
+  },
+  
+  "tts": {
+    "provider": "google",
+    "maleVoice": "ja-JP-Standard-C",
+    "femaleVoice": "ja-JP-Standard-A",
+    "targetLanguageCode": "ja-JP",
+    "speed": 1.0
+  },
+  
+  "content": {
+    "sentenceCount": 12,
+    "repeatCount": 10,
+    "difficulty": "intermediate"
+  },
+  
+  "schedule": {
+    "publishTime": "06:00",
+    "timezone": "Asia/Seoul"
+  },
+  
+  "categories": [
+    {"dayOfWeek": 1, "name": "일상 이야기", "description": "개인 경험 공유"},
+    {"dayOfWeek": 2, "name": "실전 회화", "description": "일상 대화 패턴"},
+    {"dayOfWeek": 3, "name": "뉴스 토론", "description": "시사 이슈 대화"},
+    {"dayOfWeek": 4, "name": "안내 상황", "description": "서비스 이용 대화"},
+    {"dayOfWeek": 5, "name": "여행 & 비즈니스", "description": "실용 상황"},
+    {"dayOfWeek": 6, "name": "배움 대화", "description": "지식 설명/질문"},
+    {"dayOfWeek": 0, "name": "이야기 나누기", "description": "동화/일화 공유"}
+  ]
+}
